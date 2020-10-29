@@ -1,11 +1,15 @@
-
 {
   "name": "fullstackthing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "postinstall": "cd client && npm i && npm run build"
   },
   "keywords": [],
   "author": "",
